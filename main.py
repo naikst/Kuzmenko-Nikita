@@ -1,5 +1,5 @@
 print("Hello world")
-#Задачgit add .а 1
+#Задача 1
 print("1nd program")
 print(9 ** 0.5 * 5)
 
