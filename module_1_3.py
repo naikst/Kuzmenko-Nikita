@@ -1,6 +1,6 @@
 name = str("Name: Nikita")
 print(name)
-age = 27
+age = 35
 print(age)
 New_age = 27
 print(age+1)
