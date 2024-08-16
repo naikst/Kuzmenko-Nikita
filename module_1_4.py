@@ -4,11 +4,13 @@ print(type(name))
 string = 'my_string'
 print(len(string))
 
-print('my_string'.upper())
-print('my_string'.lower())
+name = 'my_string'
+print(name .upper())
+print(name .lower())
+name = 'my_string'
+print(name .replace("_", ""))
 
-print('my_string'.replace("_", ""))
-
+name = "my_string"
 print(name[0])
 print(name[-1])
 
