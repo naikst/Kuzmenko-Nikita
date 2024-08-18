@@ -14,7 +14,8 @@ my_set2 = [4, 4, 4, 5, 6, 6]
 my_set.add(55)
 my_set.add('september')
 print(my_set)
-
+my_set.remove(7)
+print(my_set)
 
 
 
