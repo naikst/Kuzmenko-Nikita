@@ -21,8 +21,8 @@ def send_email(message, recipient, *, sender='urban.teacher@mail.ru'):
         print("Нельзя отправить письмо самому себе!")
         return
 
-    # Проверка на отправителя по умолчанию
-    if sender == 'university.help@gmail.com':
+    # Проверка на отправителя
+    if sender == 'urban.teacher@mail.ru':
         print(f"Письмо успешно отправлено с адреса {sender} на адрес {recipient}")
     else:
         print(f"НЕСТАНДАРТНЫЙ ОТПРАВИТЕЛЬ! Письмо отправлено с адреса {sender} на адрес {recipient}")
