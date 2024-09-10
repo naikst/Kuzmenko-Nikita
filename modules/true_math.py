@@ -6,3 +6,5 @@ def divide(first, second):
         return inf  # Возвращаем бесконечность, если второй аргумент 0
     else:
         return first / second
+
+
