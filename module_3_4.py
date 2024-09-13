@@ -1,5 +1,5 @@
 def single_root_words(root_word, *other_words):
-    #Приводим root_word  к нижнему регистру для корректного сравнения
+    #Приводим root_word к нижнему регистру для корректного сравнения
     root_word = root_word.lower()
 
     #Создаем пустой список для результата
@@ -20,7 +20,7 @@ def single_root_words(root_word, *other_words):
 
 
 #Примеры вызова функций
-result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'richies')
+result1 = single_root_words('rich', 'richiest', 'orichalcum', 'cheers', 'riches')
 result2 = single_root_words('Disablement', 'Able', 'Mable', 'Disable', 'Bagel')
 
 #Выводим результаты на экран
