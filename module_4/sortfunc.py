@@ -17,8 +17,6 @@ def bubble_sort(ls):
     return ls
 
 
-
-
 def selection_sort(ls):
     for i in range(len(ls)):
         min_index = i
