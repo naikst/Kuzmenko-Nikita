@@ -1,4 +1,4 @@
-class Human:
+class Human:# Класс Human, который описывает человека.
     def __init__(self, name, age): # Это специальный метод, который вызывается при создании объекта. Он
         # инициализирует атрибуты объекта.
 
@@ -20,9 +20,10 @@ class Human:
         self.name = new_name #заменим имя на новое
         print(f'Предыдущее имя: {old_name}, новое имя: {self.name}')
 
-    max.change_name('Михаил')
+
 
 #Создание и использование объектов:
 den = Human('Денис', 24)
 max = Human('Максим', 25)
+max.change_name('Михаил')
 max.birthday()
