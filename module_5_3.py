@@ -32,53 +32,66 @@ class House:  # Определение класса House (Дом)
 
     def __eq__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора ==
-        return self.number_of_floors == other.number_of_floors  # Возвращает True, если количество этажей совпадает
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора ==
+            return self.number_of_floors == other.number_of_floors  # Возвращает True, если количество этажей совпадает
+        return False  # Возвращает False, если количество этажей не совпадает
 
     def __lt__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора <
-        return self.number_of_floors < other.number_of_floors  # Возвращает True, если количество этажей меньше
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора <
+            return self.number_of_floors < other.number_of_floors  # Возвращает True, если количество этажей меньше
+        return False  # Возвращает False, если количество этажей не меньше
 
     def __le__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора <=
-        return self.number_of_floors <= other.number_of_floors  # Возвращает True, если количество этажей меньше или
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора <=
+            return self.number_of_floors <= other.number_of_floors  # Возвращает True, если количество этажей меньше или
         # равно
+        return False  # Возвращает False, если количество этажей не меньше
 
     def __gt__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора >
-        return self.number_of_floors > other.number_of_floors  # Возвращает True, если количество этажей больше
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора >
+            return self.number_of_floors > other.number_of_floors  # Возвращает True, если количество этажей больше
+        return False  # Возвращает False, если количество этажей не больше
 
     def __ge__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора >=
-        return self.number_of_floors >= other.number_of_floors  # Возвращает True, если количество этажей больше или
-        # равно
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора >=
+            return self.number_of_floors >= other.number_of_floors  # Возвращает True, если количество этажей больше или
+            # равно
+        return False  # Возвращает False, если количество этажей не больше
 
     def __ne__(self, other):
         # Специальный метод, который вызывается при сравнении двух объектов
-        # Например, при использовании оператора!=
-        return self.number_of_floors != other.number_of_floors  # Возвращает True, если количество этажей не равно
+        if isinstance(other, House):  # Проверяем, является ли other объектом House
+            # Например, при использовании оператора!=
+            return self.number_of_floors != other.number_of_floors  # Возвращает True, если количество этажей не равно
+        return False  # Возвращает False, если количество этажей равно
 
     def __add__(self, value):
         # Специальный метод, который вызывается при сложении двух объектов
-        # Например, при использовании оператора +
-        return House(self.name, self.number_of_floors + value)  # Возвращает новый объект House с новым названием и
-        # суммарным кол-вом этажей
+        if isinstance(value, int):  # Проверяем, является ли value целым числом
+            # Например, при использовании оператора +
+            return House(self.name, self.number_of_floors + value)  # Возвращает новый объект House с новым названием и
+            # суммарным кол-вом этажей
+        return NotImplemented  # Возвращает NotImplemented, если сложение невозможно (например, для House и str)
 
     def __radd__(self, value):
         # Специальный метод, который вызывается при сложении числа с объектом
-        # Например, при использовании оператора +
-        return House(self.name, self.number_of_floors + value)
-        # Возвращает новый объект House с новым названием и суммарным
+        return self.__add__(value)  # Вызывает __add__ с обратным порядком операндов
 
     def __iadd__(self, value):
-        # Специальный метод, который вызывается при присваивании объекту нового значения
-        # Например, при использовании оператора +=
-        return House(self.name, self.number_of_floors + value)
-        # Возвращает новый объект House с новым названием и суммарным
+        # Метод __iadd__ предназначен для изменения объекта "на месте" при использовании оператора +=.
+        if isinstance(value, int):  # Проверяем, является ли value целым числом
+            # Например, при использовании оператора +=
+            self.number_of_floors += value  # Изменяет количество этажей
+        return self  # Возвращает текущий объект
 
 
 h1 = House('ЖК Эльбрус', 10)
