@@ -1,7 +1,8 @@
 class Animals:
+    alive = True
+    fed = False
+
     def __init__(self, name):
-        self.alive = True
-        self.fed = False
         self.name = name
 
         # Если переданное растение (food) съедобное - выводит на экран "<self.name> съел <food.name>",
@@ -18,8 +19,9 @@ class Animals:
 
 
 class Plant:
+    edible = False
+
     def __init__(self, name):
-        self.edible = False
         self.name = name
 
 
