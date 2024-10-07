@@ -1,5 +1,5 @@
 def calculate_structure_sum(data_structure):
-    total_sum: int = 0  # Здесь будет хранится итоговая сумма
+    total_sum: int = 0  # Здесь будет храниться итоговая сумма
 
     # Внутренняя рекурсивная функция для обработки всех элементов
     def recursive_sum(item):
