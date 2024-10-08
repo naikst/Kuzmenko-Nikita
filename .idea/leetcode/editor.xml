@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[3067]Count Pairs of Connectable Servers in a Weighted Tree Network.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/doc/content/[3067]Count Pairs of Connectable Servers in a Weighted Tree Network.md" />
+              <option name="frontendQuestionId" value="leetcode.com3067" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[3067]Count Pairs of Connectable Servers in a Weighted Tree Network.py" />
+              <option name="titleSlug" value="count-pairs-of-connectable-servers-in-a-weighted-tree-network" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[884]Uncommon Words from Two Sentences.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/doc/content/[884]Uncommon Words from Two Sentences.md" />
+              <option name="frontendQuestionId" value="leetcode.com884" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[884]Uncommon Words from Two Sentences.py" />
+              <option name="titleSlug" value="uncommon-words-from-two-sentences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
